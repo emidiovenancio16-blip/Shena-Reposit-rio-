@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #21191e;
+    color: #f7e8f0;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    color: #e8a1c1;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* PÁGINA INICIAL */
+.inicio {
+    min-height: 350px;
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background:
+        radial-gradient(circle at top left, #c56d88, transparent 45%),
+        #30262d;
+    border-bottom: 12px solid #191317;
+}
+
+.apresentacao h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.apresentacao p {
+    color: #d4b8c9;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    background: linear-gradient(90deg, #bd5c86, #f3a3bd);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* FOTO */
+.foto {
+    background: linear-gradient(135deg, #b99ac7, #f3a3bd);
+    padding: 12px;
+    border-radius: 20px;
+    width: 190px;
+    flex-shrink: 0;
+}
+
+.foto img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    border: 2px solid #f7c7dd;
+}
+
+/* SECÇÕES */
+section {
+    padding: 50px 5%;
+}
+
+.sobre {
+    background: #2b2028;
+    border-bottom: 12px solid #191317;
+}
+
+.cartoes {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.cartao {
+    flex: 1;
+    padding: 22px;
+    border: 1px solid #82536e;
+    border-radius: 14px;
+    background: #261d24;
+}
+
+.cartao h3 {
+    color: #f0b1ce;
+    margin-bottom: 12px;
+}
+
+.cartao p {
+    color: #ddcbd6;
+}
+
+/* COMPETÊNCIAS */
+.competencias {
+    text-align: center;
+    background: #241c22;
+}
+
+.competencias > p {
+    color: #cdb6c7;
+    margin-bottom: 25px;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.habilidades span {
+    padding: 8px 18px;
+    border: 1px solid #71475f;
+    border-radius: 25px;
+    color: #f4b7d0;
+    background: #30232d;
+}
+
+/* TRABALHOS */
+.trabalhos {
+    background: #a58bb3;
+    border-bottom: 12px solid #191317;
+}
+
+.projecto {
+    flex: 1;
+    background: #30232d;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 12px #0005;
+}
+
+.projecto h3 {
+    color: #f2c6dc;
+    margin-bottom: 12px;
+}
+
+.projecto p {
+    color: #e0ced9;
+}
+
+/* EXPERIÊNCIA */
+.experiencia {
+    background: #c98599;
+    border-bottom: 12px solid #ee91b2;
+}
+
+.experiencia h2 {
+    color: white;
+}
+
+.item {
+    max-width: 600px;
+    margin: 25px auto;
+}
+
+.item h3 {
+    margin-bottom: 8px;
+}
+
+.item p {
+    color: #fff0f5;
+}
+
+/* CONTACTO */
+.contacto {
+    background: #1e161b;
+}
+
+.contacto-conteudo {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.dados, form {
+    flex: 1;
+}
+
+.dados p {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #d58aaa;
+    border-radius: 9px;
+    background: #291f26;
+    color: white;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #bd5c86, #f3a3bd);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    margin: 40px auto 0;
+    padding: 20px;
+    max-width: 420px;
+    border-radius: 14px;
+    background: #e58eae;
+    color: #4c2a3b;
+}
+
+/* TELEMÓVEIS */
+@media (max-width: 700px) {
+    .inicio {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .apresentacao h1 {
+        font-size: 30px;
+    }
+
+    .foto {
+        width: 160px;
+    }
+
+    .cartoes,
+    .contacto-conteudo {
+        flex-direction: column;
+    }
+}
